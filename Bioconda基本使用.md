@@ -79,9 +79,10 @@ package:
 
 build:
   number: 2  # 这个数字一般如果我们提交代码重新构建的话,要加1
-  skip: True 
-  run_exports: # run_exports这个要配置上, 不然提交可能check不通过
-    - {{ pin_subpackage('bayestyper', max_pin="x.x") }}
+  skip: True
+  # run_exports这个要配置上, 不然提交可能check不通过
+  run_exports: 
+    - {{ pin_subpackage(name|lower) }}
 
 source:
   url: https://github.com/bioinformatics-centre/BayesTyper/archive/v{{ version }}.tar.gz
@@ -109,7 +110,8 @@ test: # 测试安装是否成功的命令(你们截图要截图的命令在这)
     - bayesTyper | grep BayesTyper
     - bayesTyperTools | grep BayesTyperTools
 
-extra: # 一般我们要加这个extra配置,指示aarch64架构也支持,但是如果在build下已经指示是noarch了,就不要加这个了
+# 一般我们要加这个extra配置,指示aarch64架构也支持,但是如果在build下已经指示是noarch了,就不要加这个了
+extra: 
   additional-platforms:
     - linux-aarch64
 ```
