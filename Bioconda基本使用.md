@@ -42,7 +42,7 @@ channel_priority: strict
 ```
 
 ## 本地构建和安装测试
-1. 先到github网站fork一下孙骞的这个仓库: https://github.com/sunqian2116/bioconda-recipes
+1. 先到github网站fork一下这个仓库: https://github.com/ZerryNi/bioconda-recipes
 2. 然后在你申请的鲲鹏服务器上执行git clone 你fork的仓库地址
 3. 你clone后的目录下应该有以下内容, 其中你要适配的软件都在recipes目录下
 ```shell
