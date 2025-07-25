@@ -5,7 +5,7 @@
 ```
 wget --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2023.09-0-Linux-aarch64.sh
 ```
-2. bash ./Anaconda3-2023.09-0-Linux-aarch64.sh
+2. bash ./Anaconda3-2023.09-0-Linux-aarch64.sh ## 注意：安装过程的交互要选yes
 3. source ~/.bashrc
 4. 验证: conda --version 返回版本即安装成功, 不用再执行第五步了
 ```shell
