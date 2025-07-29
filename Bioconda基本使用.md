@@ -82,7 +82,8 @@ build:
   skip: True
   # run_exports这个要配置上, 不然提交可能check不通过
   run_exports: 
-    - {{ pin_subpackage(name|lower) }}
+   #- {{ pin_subpackage(name|lower) }}
+    - {{ pin_subpackage(name,max_pin="x.x") }}
 
 source:
   url: https://github.com/bioinformatics-centre/BayesTyper/archive/v{{ version }}.tar.gz
