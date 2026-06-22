@@ -10,7 +10,7 @@ wget https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-aarch64.sh
 4. 验证: conda --version 返回版本即安装成功, 不用再执行第五步了
 ```shell
 (base) [root@DC1-09-007 ~]# conda --version
-conda 23.7.4
+conda 25.5.1
 ```
 5. 如果source ~/.bashrc执行失败,conda --version没有返回值可以尝试直接创建软连接:
 ```
